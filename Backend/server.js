@@ -9,6 +9,8 @@
 const http = require('http');
 const app = require('./app');
 
+console.log('Server Js executing...');
+
 //Creates HTTP server
 const server = http.createServer(app); 
 module.exports = server; //Exports the HTTP server

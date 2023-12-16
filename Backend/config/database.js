@@ -16,7 +16,7 @@ async function create_connection() {
   try {
     const conn = await mongoose.connect(mongoDB_URI, {
       connectTimeoutMS: 30000,
-      dbName: 'Secrete_Santa_DB'
+      dbName: 'Apex_foods_DB'
     });
     console.log('MongoDB connected');
 
