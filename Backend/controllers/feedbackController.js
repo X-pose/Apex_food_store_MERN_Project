@@ -65,7 +65,7 @@ const sendMail = async (username, email, fb) =>{
 
 
 // Array of recipients
-    const recipients = [process.env.ADMIN_MAIL_1, 'recipient2@example.com', 'recipient3@example.com'];
+    const recipients = [process.env.ADMIN_MAIL_1, process.env.ADMIN_MAIL_2, process.env.ADMIN_MAIL_3];
 
 // Loop through recipients and send email to each one
     recipients.forEach((recipient) => {
