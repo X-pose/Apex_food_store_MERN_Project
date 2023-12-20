@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import {Route , Routes , BrowserRouter as Router} from 'react-router-dom'
 import OrderHistory from './pages/order_history/order_history';
+import OrderCard from './components/order_card/order_card';
 /* Add HomePage element here by importing
   ex- import HomePage from './home/HomePage';
 */
@@ -10,7 +11,8 @@ function App() {
         <Router>
           <Routes>
             
-          <Route path="/order-history" element={< OrderHistory/>} />
+          <Route path="/order-history" element={<OrderHistory/>} />
+          <Route path="/order-card" element={<OrderCard/>} />
           
           </Routes>
         </Router>
