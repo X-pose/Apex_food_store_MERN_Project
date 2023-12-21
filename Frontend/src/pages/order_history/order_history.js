@@ -1,6 +1,7 @@
 import React from 'react'
 import './order_history.css'
 import Search from '../../assets/search-handle.png'
+import OrderCard from '../../components/order_card/order_card'
 
 function OrderHistory() {
   return (
@@ -22,7 +23,8 @@ function OrderHistory() {
                     </div>
                     <div className='order-history-list-con'>
                         <div className='order-history-list'>
-
+                            <OrderCard/>
+                            <OrderCard/>
                         </div>
                     </div>
                 </div>
