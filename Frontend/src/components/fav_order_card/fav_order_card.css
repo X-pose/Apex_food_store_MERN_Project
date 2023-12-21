@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,500&family=Raleway&family=Roboto:wght@500&display=swap');
+
+:root {
+    --font-fam-one: 'Poppins', sans-serif;
+    --font-fam-two: 'Raleway', sans-serif;
+    --font-fam-three: 'Roboto', sans-serif;
+
+    --gray-variant-one: #bdc3c7;
+    --gray-variant-two: #85899E;
+    --white-variant-one: #ecf0f1;
+    --blue-variant-one: #820000;
+    --blue-variant-two: #FF6969;
+    --blue-variant-three: #0D4169;
+    --sidebar-color: #121212;
+}
+
+.fav-order-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav-order-card{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.fav-order-card-header{
+    display: flex;
+    justify-content: center;
+}
+
+#fav-order-card-header-title{
+    font-family: var(--font-fam-three);
+    font-size: 1em;
+    color: #121212;
+}
+
+.fav-order-card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

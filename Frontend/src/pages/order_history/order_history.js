@@ -2,11 +2,13 @@ import React from 'react'
 import './order_history.css'
 import Search from '../../assets/search-handle.png'
 import OrderCard from '../../components/order_card/order_card'
+import FavOrderCard from '../../components/fav_order_card/fav_order_card'
+import backgroundImage from '../../assets/Order_History_background.png'
 
 function OrderHistory() {
-  return (
-    <div className='order-history-con'>
-        <div className='order-history'>
+    return (
+        <div className='order-history-con' >
+        <div className='order-history' style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='order-history-title'>
                 <span id='history-title'>Order History</span>
             </div>
@@ -22,7 +24,8 @@ function OrderHistory() {
                         </form>
                     </div>
                     <div className='order-history-list-con'>
-                        <div className='order-history-list'>
+                        <div className='order-history-list' style={{ overflowY: 'scroll' }}>
+                            <OrderCard/>
                             <OrderCard/>
                             <OrderCard/>
                         </div>
@@ -35,8 +38,10 @@ function OrderHistory() {
                         <span id='history-body-right-title'>Your Favorites</span>
                     </div>
                     <div className='order-favorite-list-con'>
-                        <div className='order-favorite-list'>
-                            
+                        <div className='order-favorite-list' style={{ overflowY: 'scroll' }}>
+                            <FavOrderCard/>
+                            <FavOrderCard/>
+                            <FavOrderCard/>
                         </div>
                     </div>
                 </div>
