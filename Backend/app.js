@@ -27,6 +27,7 @@ ex :-
 
 app.use('/api/feedback%FAQs', feedbackRouter)
 
+
 //Backend static file serving is done from here.
 app.use(AppExpress.static(path.join(__dirname, 'build')))
 // Serving the production ready 'index.html' file for all requests
