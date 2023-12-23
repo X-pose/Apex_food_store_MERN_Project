@@ -52,37 +52,39 @@ exports.sendFeedBacks = async (req,res) => {
     }
 }
 
-const sendMail = async (username, email, fb) =>{
-
-    // Create a transporter using SMTP
-    const transporter = nodemailer.createTransport({
-        service: process.env.APEX_MAIL_SERVICE,
-        auth: {
-            user: process.env.APEX_MAIL,  // Your Gmail address
-            pass: process.env.APEX_MAIL_PSW // Your Gmail password or an app-specific password
-        }
-    });
 
 
-// Array of recipients
-    const recipients = [process.env.ADMIN_MAIL_1, 'recipient2@example.com', 'recipient3@example.com'];
-
-// Loop through recipients and send email to each one
-    recipients.forEach((recipient) => {
-        const mailOptions = {
-            from: process.env.GMAIL_USER,
-            to: recipient,
-            subject: 'New feedback added - Apex food store',
-            text: `A new feedback added by ${username} under this email - ${email} Feedback context - ${fb}`
-        };
-
-        // Send email
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.error(`Error sending email to ${recipient}:`, error);
-            } else {
-                console.log(`Email sent to ${recipient}:`, info.response);
+const sendMail = async (username, email, fb) => {
+    try {
+        // Create a transporter using SMTP
+        const transporter = nodemailer.createTransport({
+            service: process.env.APEX_MAIL_SERVICE,
+            auth: {
+                user: process.env.APEX_MAIL,  // Your Gmail address
+                pass: process.env.APEX_MAIL_PSW // Your Gmail password or an app-specific password
             }
         });
-    });
-}
+
+        console.log(process.env.APEX_MAIL + " " + process.env.APEX_MAIL_PSW);
+
+        // Array of recipients
+        const recipients = [process.env.ADMIN_MAIL_1, process.env.ADMIN_MAIL_2, process.env.ADMIN_MAIL_3];
+
+        // Loop through recipients and send email to each one
+        for (const recipient of recipients) {
+            const mailOptions = {
+                from: process.env.APEX_MAIL,
+                to: recipient,
+                subject: 'New feedback added - Apex food store',
+                text: `A new feedback added by ${username} under this email - ${email} Feedback context - ${fb}`
+            };
+
+            // Send email
+            const info = await transporter.sendMail(mailOptions);
+            console.log(`Email sent to ${recipient}:`, info.response);
+        }
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
+};
+
