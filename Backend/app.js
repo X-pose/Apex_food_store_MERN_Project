@@ -10,7 +10,7 @@ const AppExpress = require('express')
 const app = AppExpress()
 const path = require('path')
 const appRouter =AppExpress.Router()
-
+const feedbackRouter = require('./routes/feedbackRoutes')
 
 
 //Mounting middleware to API calls
@@ -24,6 +24,9 @@ ex :-
     app.use('/api/login',loginRouter)
 
 */
+
+app.use('/api/feedback%FAQs', feedbackRouter)
+
 
 //Backend static file serving is done from here.
 app.use(AppExpress.static(path.join(__dirname, 'build')))
