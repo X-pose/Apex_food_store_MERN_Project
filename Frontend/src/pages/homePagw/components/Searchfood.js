@@ -37,7 +37,6 @@ const ItemList = () => {
 
 
 
-
 <div className="search2">
         <input className='search'
           type="text"
