@@ -9,7 +9,7 @@ import Navbar from './components/Header/Navbar';
 function App() {
   return (
     <Fragment>
-      <Navbar/>
+        <Navbar/>
         <Router>
           <Routes>
             
