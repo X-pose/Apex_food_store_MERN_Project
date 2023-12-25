@@ -1,0 +1,81 @@
+
+.topContainer{
+ height: 100vh;
+ color: antiquewhite;
+ display: grid;
+ grid-template-rows: 25% 75% ;
+
+}
+
+.titleContainer_top{
+
+    color: rgba(0, 255, 255, 0.621);
+}
+
+.faqListDiv{
+    color: rgba(37, 181, 32, 0.621);
+}
+
+
+
+/*Middle container starts from here*/
+
+.middleContainer{
+ height: 100vh;
+ color: rgb(233, 135, 7);
+ display: grid;
+ grid-template-rows: 20% 10% 60%;
+}
+
+.titleContainer_middle{
+    color: rgba(0, 0, 255, 0.484);
+}
+
+.subTitileContainer_middle{
+    color: rgba(238, 0, 255, 0.484);
+}
+
+.customerFeedbackDiv{
+    color: rgba(0, 255, 119, 0.484);
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 1%;
+}
+
+/* feedback style is applied to 3 divs inside customerFeedbackDiv*/
+.feedback{
+    color: rgba(165, 42, 42, 0.596);
+}
+
+
+
+
+/*Bottom container starts from here*/
+
+.bottomContainer{
+
+ height: 100vh;
+ color: rgba(199, 233, 7, 0.862);
+ display: grid;
+ grid-template-rows: 25% 75%;
+
+}
+
+.titleContainer_bottom{
+ color: cadetblue;
+}
+
+.feedbackFormContainer{
+ color: chartreuse;
+ display: grid;
+ grid-template-columns: 25% 75%;
+}
+
+/*infoDiv and feedbackForm are 2 divs inside feedbackFormContainer -> Left & Right*/
+.infoDiv{
+    color: aliceblue;
+}
+
+.feedbackForm{
+    color: rgb(21, 0, 255);
+}
