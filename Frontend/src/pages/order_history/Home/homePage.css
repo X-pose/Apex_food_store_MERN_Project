@@ -1,0 +1,50 @@
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  background: url('../../../../public/imgs/back.png');
+  background-repeat: no-repeat;
+   
+}
+
+
+.siteName{
+  padding-top: 60px;
+  padding-left: 33px;
+  font-size: 90px;
+  color: #ee7214;
+}
+
+.food{
+  color: #000000;
+}
+
+
+
+
+.topcontainer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  
+}
+
+.description{
+  margin-top: 60px;
+  padding-left: 33px;
+}
+
+.descrip2{
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  margin-top: 20px;
+  text-align: center;
+  width: max-content;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.imglist{
+ border-radius: 20px; 
+ 
+}
