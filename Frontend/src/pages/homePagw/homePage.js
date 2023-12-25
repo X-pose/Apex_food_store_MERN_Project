@@ -22,7 +22,7 @@ function Homepage() {
  <div className="image"></div>
 <div className="tophead">
 
-<a className="h" >Home</a>
+<a className="h" href="#">Home</a>
 <a className="h">food and beverage</a>
 <a className="h">cart</a>
 <a className="h">contact</a>
