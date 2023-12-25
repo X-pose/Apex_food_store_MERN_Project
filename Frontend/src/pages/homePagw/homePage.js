@@ -22,11 +22,11 @@ function Homepage() {
  <div className="image"></div>
 <div className="tophead">
 
-<<<<<<< HEAD
+
 <a className="h" href="#">Home</a>
-=======
+ 
 <a className="h" >Home</a>
->>>>>>> b5ccaa4a0af1ffba4e8e2205f6a9ebcaf87bce27
+  
 <a className="h">food and beverage</a>
 <a className="h">cart</a>
 <a className="h">contact</a>
@@ -58,7 +58,8 @@ function Homepage() {
 
       </div>
       </div>
-          
+           
+
 <Searchfood></Searchfood>
     </div>
   );
