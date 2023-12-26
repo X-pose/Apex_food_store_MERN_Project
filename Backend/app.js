@@ -11,13 +11,13 @@ const app = AppExpress()
 const path = require('path')
 const appRouter =AppExpress.Router()
 const feedbackRouter = require('./routes/feedbackRoutes')
-
+const itemRouter = require('./routes/itemRoutes')
 
 //Mounting middleware to API calls
 app.use(AppExpress.json())
 app.use('/static', AppExpress.static(path.join(__dirname, 'public')))
 app.use('/', appRouter)
-
+app.use('/api/items',itemRouter)
 /*Setup your routes here
 
 ex :-
