@@ -1,1 +1,84 @@
+# Node.js
 node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# VSCode
+.vscode/
+
+# IntelliJ
+.idea/
+
+# npm
+*.npm
+
+# User-specific files
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+.pnpm-compact.yaml
+
+# parcel-bundler
+.cache/
+dist/
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Protractor intermediate build files (https://github.com/angular/protractor/issues/1165)
+protractor-debug.log
+
+# Puppeteer
+.puppeteer/
+
+# Cypress
+.cypress/
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# NestJS
+/dist/

@@ -1,0 +1,95 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  background: url('./images/back.png');
+  background-repeat: no-repeat;
+   
+}
+
+
+.siteName{
+  padding-top: 60px;
+  padding-left: 33px;
+  font-size: 90px;
+  color: #ee7214;
+}
+
+.food{
+  color: #000000;
+}
+
+ 
+
+.topcontainer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  
+}
+
+.description{
+  margin-top: 60px;
+  padding-left: 33px;
+}
+
+.descrip2{
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  margin-top: 20px;
+  text-align: center;
+  width: max-content;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tophead {
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #2121217f;
+   
+  
+   
+}
+
+
+.image{
+  
+  position: absolute;
+  top: 20px;
+  margin-left: 20px;
+  background: url(../../../public/Ellipse\ 451.png);
+  background-size: cover;
+  height:50px;
+  width: 50px;
+}
+
+.h{
+  font-size: 20px;
+ margin-left:80px
+}
+
+ 
+ 
+
+ 
+
+
+.imglist{
+ border-radius: 20px; 
+ 
+}
+
+
+ 
