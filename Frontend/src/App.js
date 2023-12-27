@@ -15,7 +15,7 @@ function App() {
   return (
     
     <Fragment>
-      <Navbar/>
+        <Navbar/>
         <Router>
           <Routes>
             
