@@ -25,7 +25,7 @@ ex :-
 
 */
 
-app.use('/api/feedback%FAQs', feedbackRouter)
+app.use('/api/feedbackFAQs', feedbackRouter)
 
 
 //Backend static file serving is done from here.

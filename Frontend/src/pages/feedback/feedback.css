@@ -1,24 +1,24 @@
 .topContainer {
-    position: relative; 
+    position:relative;
     height: 100vh;
     width: 100vw;
-    color: rgb(200, 43, 174);
+    
     display: grid;
     grid-template-rows: 25% 75%;
     background-color: #FFFEFE;
-    z-index: -1;
+    z-index: 0;
 
 }
 
 .topContainer::before {
-    content:'' ;
-    position: absolute; 
+    content: '';
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     background-image: url('feedback_back.png');
-   
+
     background-position: center;
     /* Adjust as needed */
     opacity: 0.2;
@@ -42,7 +42,8 @@
 .faqListDiv {
     width: 100%;
     height: 100%;
-    color: rgba(37, 181, 32, 0.621);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -50,7 +51,7 @@
 /*Middle container starts from here*/
 
 .middleContainer {
-    position: relative; 
+    position: relative;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -59,15 +60,15 @@
     z-index: -1;
 }
 
-.middleContainer::before{
-    content:'' ;
-    position: absolute; 
+.middleContainer::before {
+    content: '';
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     background-image: url('feedback_back.png');
-   
+
     background-position: center;
     /* Adjust as needed */
     opacity: 0.2;
@@ -79,7 +80,7 @@
     height: 100%;
     color: #EE7214;
     margin-top: 40px;
-    
+
     text-align: center;
     font-family: Montserrat;
     font-size: 80px;
@@ -93,7 +94,7 @@
     width: 100%;
     height: 66px;
     margin-top: 40px;
-   
+
     color: rgba(0, 0, 0, 0.60);
     text-align: center;
     font-family: Inter;
@@ -136,20 +137,20 @@
     z-index: -1;
 }
 
-.bottomContainer::before{
-    content:'' ;
-    position: absolute; 
+.bottomContainer::before {
+    content: '';
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     background-image: url('feedback_back.png');
-   
+
     background-position: center;
     /* Adjust as needed */
     opacity: 0.2;
     z-index: -1;
-}   
+}
 
 .feedbackFromLabel {
     color: #000;
@@ -220,12 +221,39 @@
 
 /*infoDiv and feedbackForm are 2 divs inside feedbackFormContainer -> Left & Right*/
 .infoDiv {
-
-
-
     border-radius: 64px;
     background: #1E1E20;
 
+}
+
+.infoRow {
+    margin-left: 50px;
+    color: #FFF;
+    font-size: 22px;
+
+}
+
+
+.iconClass {
+    font-size: 24px !important;
+    display: inline-block;
+}
+
+.spaceBefore {
+    margin-left: 8px;
+}
+
+.info_label {
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .feedbackForm {
@@ -235,5 +263,5 @@
     background: #FFF;
     box-shadow: 0px 4px 21.7px 0px rgba(197, 22, 5, 0.24);
 
-
 }
+
