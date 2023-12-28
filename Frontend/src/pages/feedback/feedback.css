@@ -134,7 +134,7 @@
     background-color: #FFFEFE;
     display: grid;
     grid-template-rows: 25% 75%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .bottomContainer::before {

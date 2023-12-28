@@ -53,10 +53,25 @@ export default function Feedback() {
           ...prevData,
           [name]: value,
         }));
+
+        console.log(formData.yourName, formData.yourEmail, formData.yourFeedback)
       };
     
-      const handleSubmit = (e) => {
+      const handleSubmit = async(e) => {
         e.preventDefault();
+
+        try {
+            const response = await axios.post('/api/feedbackFAQs/sendData', {
+              fbUserName: formData.yourName,
+              fbUserEmail: formData.yourEmail,
+              fbContext: formData.yourFeedback,
+            });
+        
+            console.log('Axios POST Response:', response.data);
+          } catch (error) {
+            console.error('Error:', error);
+          }
+        
         // Add your form submission logic here
         console.log('Form Data:', formData);
       };
@@ -146,7 +161,7 @@ export default function Feedback() {
 
                             <br />
 
-                            <input type="submit" className="feedbackFormSubmitBtn" value="Send" />
+                            <button type="submit" className="feedbackFormSubmitBtn"> Send </button>
                         </form>
                     </div>
                 </div>
