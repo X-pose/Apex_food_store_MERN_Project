@@ -1,11 +1,46 @@
 import React, { useEffect, useState } from "react"
 import './feedback.css'
+import { MdOutlineMail } from "react-icons/md";
+import FaqList from '../../components/faqList/faqList'
+import axios from 'axios';
 
 export default function Feedback() {
 
     //add states -> ex :- useState
+    const [results, setResults] = useState([]);
     //add hooks -> ex :- useEffect
+    useEffect(() => {
+
+        const getFaqList =async()=>{
+            try {
+    
+                console.log('getFAQList is running!')
+                await axios.get('/api/feedbackFAQs/page')
+                    .then(res => {
+    
+                        const json = res.data;
+                        setResults(json.getFAQs);
+                        console.log(res)
+                       console.log(results)
+                        
+                    })
+                    .catch(() => {
+                        console.log(`Data retrivel failed`)
+                    })
+    
+            } catch (error) {
+                console.log(error)
+    
+            }
+        }
+
+      getFaqList()      
+
+    }, []);
     //add other function -> ex :- handleChange() and other related things
+    
+   
+
     const [formData, setFormData] = useState({
         yourName: '',
         yourEmail: '',
@@ -26,6 +61,8 @@ export default function Feedback() {
         console.log('Form Data:', formData);
       };
 
+
+
     return (
         <div>
             <div className="topContainer">
@@ -33,7 +70,7 @@ export default function Feedback() {
                     <p>Frequently Asked Questions</p>
                 </div>
                 <div className="faqListDiv">
-                    <p>Hello</p>
+                {results !== undefined && <FaqList queries={results} />}
                 </div>
             </div>
             <div className="middleContainer">
@@ -62,7 +99,14 @@ export default function Feedback() {
                 </div>
                 <div className="feedbackFormContainer">
                     <div className="infoDiv">
-                        <p></p>
+                        <p className="info_label">Info</p>
+                        <div className="infoInnerContainer">
+                            <div className="infoRow">
+                            <MdOutlineMail className="iconClass" />
+                          
+                            <span className="spaceBefore">apexFoods@gmail.com</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="feedbackForm">
                         <form className= "feedbackFRM" onSubmit={handleSubmit}>

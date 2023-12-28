@@ -1,10 +1,28 @@
 .topContainer {
+    position:relative;
     height: 100vh;
     width: 100vw;
-    color: rgb(200, 43, 174);
+    
     display: grid;
     grid-template-rows: 25% 75%;
+    background-color: #FFFEFE;
+    z-index: 0;
 
+}
+
+.topContainer::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('feedback_back.png');
+
+    background-position: center;
+    /* Adjust as needed */
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .titleContainer_top {
@@ -24,7 +42,8 @@
 .faqListDiv {
     width: 100%;
     height: 100%;
-    color: rgba(37, 181, 32, 0.621);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -32,11 +51,28 @@
 /*Middle container starts from here*/
 
 .middleContainer {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    color: rgb(233, 135, 7);
     display: grid;
+    background-color: #FFFEFE;
     grid-template-rows: 15% 15% 70%;
+    z-index: -1;
+}
+
+.middleContainer::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('feedback_back.png');
+
+    background-position: center;
+    /* Adjust as needed */
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .titleContainer_middle {
@@ -44,7 +80,7 @@
     height: 100%;
     color: #EE7214;
     margin-top: 40px;
-    background-color: blue;
+
     text-align: center;
     font-family: Montserrat;
     font-size: 80px;
@@ -58,7 +94,7 @@
     width: 100%;
     height: 66px;
     margin-top: 40px;
-    background-color: aquamarine;
+
     color: rgba(0, 0, 0, 0.60);
     text-align: center;
     font-family: Inter;
@@ -71,7 +107,7 @@
 .customerFeedbackDiv {
     width: 100%;
     height: 100%;
-    background-color: burlywood;
+
     color: rgba(0, 255, 119, 0.484);
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -92,12 +128,28 @@
 
 .bottomContainer {
 
+    position: relative;
     height: 100vh;
     width: 100vw;
-
+    background-color: #FFFEFE;
     display: grid;
     grid-template-rows: 25% 75%;
+    z-index: -1;
+}
 
+.bottomContainer::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('feedback_back.png');
+
+    background-position: center;
+    /* Adjust as needed */
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .feedbackFromLabel {
@@ -111,7 +163,7 @@
 }
 
 .feedbackFRM {
-    margin: 10%
+    margin: 5%;
 }
 
 .feedbackFromInput {
@@ -139,7 +191,7 @@
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 .titleContainer_bottom {
@@ -158,6 +210,7 @@
 
 .feedbackFormContainer {
 
+
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 165px;
@@ -168,12 +221,39 @@
 
 /*infoDiv and feedbackForm are 2 divs inside feedbackFormContainer -> Left & Right*/
 .infoDiv {
-
-
-
     border-radius: 64px;
     background: #1E1E20;
 
+}
+
+.infoRow {
+    margin-left: 50px;
+    color: #FFF;
+    font-size: 22px;
+
+}
+
+
+.iconClass {
+    font-size: 24px !important;
+    display: inline-block;
+}
+
+.spaceBefore {
+    margin-left: 8px;
+}
+
+.info_label {
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .feedbackForm {
@@ -183,5 +263,5 @@
     background: #FFF;
     box-shadow: 0px 4px 21.7px 0px rgba(197, 22, 5, 0.24);
 
-
 }
+
