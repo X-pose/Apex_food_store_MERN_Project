@@ -107,18 +107,22 @@
 .customerFeedbackDiv {
     width: 100%;
     height: 100%;
-
-    color: rgba(0, 255, 119, 0.484);
+    text-align: center;
+    justify-content:space-evenly;
+    background-color: rgba(0, 255, 119, 0.484);
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    column-gap: 1%;
+   
 }
 
 /* feedback style is applied to 3 divs inside customerFeedbackDiv*/
 .feedback {
     width: 100%;
     height: 100%;
-    color: rgba(165, 42, 42, 0.596);
+    margin-top: 60px;
+    display: flex;
+  justify-content: center;
+    background-color: rgba(165, 42, 42, 0.596);
 }
 
 
@@ -192,6 +196,10 @@
     padding-right: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.submitBtnDiv{
+    text-align: center;
 }
 
 .titleContainer_bottom {
