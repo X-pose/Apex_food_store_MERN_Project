@@ -1,0 +1,51 @@
+.footer{
+    display: grid;
+    grid-template-columns: 10% 40% 25% 25%;
+    background-color: rgba(0, 0, 0, 0.355);
+    color: rgb(255, 255, 255);
+   
+}
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+ .social_media{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+ }
+.links{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sub_links{
+    color: white;
+    justify-content: space-between;
+    margin-top:10px;
+    
+}
+
+.Logo{
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 100px;
+    width: 100px;
+
+
+}
+
+.Description{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size:  15px;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

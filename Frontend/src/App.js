@@ -8,6 +8,7 @@ import Navbar from './components/Header/Navbar';
 
 
 import HomePage from './pages/homePagw/homePage';
+import Footer from './components/Footer/footer';
 /* Add HomePage element here by importing
   ex- import HomePage from './home/HomePage';
 */
@@ -27,6 +28,7 @@ function App() {
           <Route path="/Home" element={<HomePage/>} />
           </Routes>
         </Router>
+        <Footer/>
     </Fragment>
   )
 }
