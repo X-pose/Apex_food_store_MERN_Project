@@ -1,14 +1,17 @@
 import React from 'react';
 import './feedbackCard.css'
+import icon  from './feedbackIcon.png'
 
 const FeedbackCard = ({ userName, feedback, proPic }) => {
 
+  
     
   return (
     <div className='feedbackCard'>
-        <image src = {proPic} className='feedbackCardPropic'/>
-        <span className='feedbackCardName'>{userName}</span>
-        <image src = ''className='feedbackCardIcon'/>
+        <img src = {proPic} alt ='Profile picture' className='feedbackCardPropic'/>
+        <br/>
+        <span className='feedbackCardName'>{userName}</span><br/>
+        <img src =  {icon} alt='icon' className='feedbackCardIcon'/><br/>
         <span className='feedbackCardContext'>"{feedback}"</span>
 
 
