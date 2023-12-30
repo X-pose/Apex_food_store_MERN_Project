@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 40% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00000054;
+    
+
+}
+
+.name{
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
+    color: aliceblue;
+    font-size: 30px;
+    padding-right: 190px;
+    
+}
+
+.nav_category{
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 60px;
+    cursor: pointer;
+    }
+
+.LOGO{
+    padding-left: 20px;
+    height: 35px;
+    width: 60px;
+}
