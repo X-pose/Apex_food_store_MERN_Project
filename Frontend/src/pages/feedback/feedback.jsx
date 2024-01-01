@@ -4,6 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import FaqList from '../../components/faqList/faqList'
 import FeedbackCard from "../../components/feedbackCard/feedbackCard";
 import axios from 'axios';
+import proPicDefault from './defaultProPic.png'
 
 export default function Feedback() {
 
@@ -99,13 +100,13 @@ export default function Feedback() {
                 </div>
                 <div className="customerFeedbackDiv">
                     <div className="feedback">
-                        <FeedbackCard userName='TestUser1' feedback='Test feedback' proPic='' />
+                        <FeedbackCard userName='TestUser1' feedback='Test feedback' proPic={proPicDefault} />
                     </div>
                     <div className="feedback">
-                        <FeedbackCard userName='TestUser1' feedback='Test feedback' />
+                        <FeedbackCard userName='TestUser1' feedback='Test feedback' proPic={proPicDefault}/>
                     </div>
                     <div className="feedback">
-                        <FeedbackCard userName='TestUser1' feedback='Test feedback' />
+                        <FeedbackCard userName='TestUser1' feedback='Test feedback' proPic={proPicDefault}/>
                     </div>
                 </div>
             </div>
